@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            /* border: 2px solid; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 1.5% 0.5%;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .container1>div{
+           padding: 70px;
+           background-color: rgb(150, 150, 169);
+           text-align: center;
+        }
+        .section1{
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .section2{
+            grid-column: 1/2;
+            grid-row: 2/5;
+        }
+        .section3{
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .section6{
+            grid-column:2/4;
+            grid-row: 4/5;
+        }
+        @media screen and (width<576px){
+            .container1{
+                width: 100%;
+                padding-right: 100%;
+                margin-top: 20%;
+                margin-left: 100%;
+                gap: 1% 1%;
+            
+            }
+            
+        }
+        @media screen and (width>576px) and (width<1200px){
+            .container1{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        @media screen and (width>1200px){
+            .container1{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container1">
+    <div class="section1">section1</div>
+    <div class="section2">section2</div>
+    <div class="section3">section3</div>
+    <div class="section4">section4</div>
+    <div class="section5">section5</div>
+    <div class="section6">section6</div>
+    
+   </div> 
+</body>
+</html>
